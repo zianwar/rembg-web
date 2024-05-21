@@ -4,8 +4,8 @@ from fastapi import FastAPI, File, UploadFile, Request
 from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.templating import Jinja2Templates
 from rembg import remove
-app = FastAPI()
 
+app = FastAPI()
 templates = Jinja2Templates(directory=".")
 
 @app.get("/", response_class=HTMLResponse)
