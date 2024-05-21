@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Remove Background From Image</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/concrete.css/3.0.0/concrete.min.css">
+</head>
+
+<body>
+    <style>
+        h3 {
+            text-align: center;
+        }
+
+        main {
+            margin: 50px 20%;
+            padding-top: 50px;
+        }
+    </style>
+    <main>
+        <h3>Upload Image for Background Removal</h3>
+        <form action="/rmbg" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend></legend>
+                <div class="row">
+                    <div class="column">
+                        <label for="file">Image</label>
+                        <input type="file" name="file" id="file" accept="image/*" required>
+                    </div>
+                    <input type="submit" value="Send">
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
